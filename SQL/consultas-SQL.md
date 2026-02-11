@@ -1,6 +1,6 @@
 # 🗄️ Estudos de SQL para Suporte Técnico Júnior
 
-Este arquivo contém anotações de estudos sobre a **linguagem SQL**, com foco em uso prático no contexto de **Suporte Técnico / Help Desk / Suporte a Sistemas**.
+Este repositório contém anotações práticas de estudos sobre a **linguagem SQL**, com foco no uso em **Suporte Técnico / Help Desk / Suporte a Sistemas**.
 
 O objetivo é compreender consultas, análise de dados e apoio ao diagnóstico de problemas em sistemas que utilizam banco de dados.
 
@@ -8,9 +8,9 @@ O objetivo é compreender consultas, análise de dados e apoio ao diagnóstico d
 
 ## 📚 Conceitos Básicos de Banco de Dados
 
-- Banco de dados armazena informações de forma organizada
-- SQL (Structured Query Language) é a linguagem utilizada para acessar os dados
-- Muito presente em sistemas corporativos, ERPs e aplicações internas
+- Banco de dados armazena informações de forma organizada  
+- SQL (Structured Query Language) é a linguagem utilizada para acessar os dados  
+- Muito presente em sistemas corporativos, ERPs e aplicações internas  
 
 ---
 
@@ -18,152 +18,163 @@ O objetivo é compreender consultas, análise de dados e apoio ao diagnóstico d
 
 Principais conceitos:
 
-- **Banco de dados**
-- **Tabelas**
-- **Colunas (campos)**
-- **Linhas (registros)**
+- **Banco de dados**  
+- **Tabelas**  
+- **Colunas (campos)**  
+- **Linhas (registros)**  
 
 ---
 
 ## 🔍 Consultas Básicas (SELECT)
 
-Utilização do comando `SELECT` para consulta de dados.
+Consulta de dados em tabelas:
 
-
- - **SELECT * FROM clientes;**
+sql
+SELECT * FROM clientes;
 
 Selecionando colunas específicas:
 
-- **SELECT nome, email FROM clientes;**
-
----
+SELECT nome, email FROM clientes;
 
 ## 🎯 Filtros com WHERE
 
-Utilizado para retornar apenas registros específicos.
+Retorno de registros específicos:
 
-- **SELECT * FROM pedidos
-WHERE status = 'aberto';**
+SELECT *
+FROM pedidos
+WHERE status = 'aberto';
 
-*Uso comum no suporte:
+Uso no suporte:
+
 Análise de registros
 Validação de dados
-Apoio a investigações de erro*
-
----
+Apoio a investigações de erro
 
 ## 📊 Ordenação de Dados (ORDER BY)
 
-- **SELECT * FROM chamados
-ORDER BY data_abertura DESC;**
-
----
+SELECT *
+FROM chamados
+ORDER BY data_abertura DESC;
 
 ## 🔢 Limitação de Resultados (LIMIT)
 
-- **SELECT * FROM logs
-LIMIT 10;**
-
----
+SELECT *
+FROM logs
+LIMIT 10;
 
 ## 🔗 Relacionamento entre Tabelas (JOIN)
- 
- Noções práticas de relacionamento entre tabelas.
 
-- **SELECT clientes.nome, pedidos.id
+Noções práticas de relacionamento:
+
+SELECT clientes.nome, pedidos.id
 FROM clientes
-JOIN pedidos ON clientes.id = pedidos.cliente_id;**
+JOIN pedidos 
+ON clientes.id = pedidos.cliente_id;
 
----
+## 🧠 Funções Agregadas
 
-## 🧠 Funções Básicas
+Funções utilizadas para análise:
 
-
-Conhecimento em funções agregadas:
-
-- **COUNT()**
-- **SUM()**
-- **AVG()**
-
-- **SELECT COUNT(*) FROM chamados;**
-
----
-
-## 🔍 Subconsultas (Conhecimento Atual)
-Utilização de subconsultas para consultas mais elaboradas.
+COUNT()
+SUM()
+AVG()
 Exemplo:
 
- - **SELECT nome
+SELECT COUNT(*) 
+FROM chamados;
+
+## 🔍 Subconsultas
+
+Uso de subconsultas para análise de dados:
+
+SELECT nome
 FROM clientes
 WHERE id IN (
     SELECT cliente_id
     FROM pedidos
     WHERE status = 'aberto'
-);**
+);
 
-*Aplicação no suporte:*
+Aplicação no suporte:
 
-*Análise de dados relacionados
-Investigações mais detalhadas em sistemas
-🧱 CTE – Common Table Expressions (Em Aprendizado)
-Estudo em andamento sobre CTE, utilizadas para melhorar organização e legibilidade das consultas.
-Exemplo básico:*
+Cruzamento de informações
+Investigação de problemas em sistemas
+Análises mais detalhadas
 
- - **WITH pedidos_abertos AS (
+## 🧱 CTE – Common Table Expressions (Conhecimento Prático Atual)
+
+Utilização de CTE para organizar consultas complexas:
+
+WITH pedidos_abertos AS (
     SELECT cliente_id
     FROM pedidos
     WHERE status = 'aberto'
 )
 SELECT *
 FROM clientes
-WHERE id IN (SELECT cliente_id FROM pedidos_abertos);**
+WHERE id IN (
+    SELECT cliente_id 
+    FROM pedidos_abertos
+);
 
----
+Benefícios das CTEs:
 
-## 👁️ Views (Em Aprendizado)
+Melhor legibilidade
+Organização das consultas
+Facilita manutenção
 
-Estudo introdutório sobre Views, utilizadas para criar consultas armazenadas.
-Conceito:
+## 👁️ Views (Conhecimento Básico)
 
-View é uma consulta salva que pode ser reutilizada
-Facilita leitura e padronização de dados
+Views são consultas armazenadas no banco
+Facilitam reutilização de dados
+Padronizam relatórios e consultas
 
----
+## 📊 Consultas para Análise de Dados (Conhecimento Atual)
+
+Uso combinado de:
+
+JOIN
+WHERE
+CTE
+Funções agregadas
+
+Para:
+
+Identificar padrões
+Analisar volume de chamados
+Verificar erros recorrentes
+Apoiar decisões técnicas
 
 ## 🛠️ Aplicação do SQL no Suporte Técnico
 
-Uso do SQL para:
+Uso prático para:
 
-- **Consulta de dados em sistemas**
-- **Validação de informações**
-- **Apoio ao atendimento ao cliente**
-- **Análise básica de erros e registros**
-
----
+Consulta de dados em sistemas
+Validação de informações
+Apoio ao atendimento ao cliente
+Análise de erros e registros
+Diagnóstico de falhas
 
 ## 🔒 Boas Práticas
 
-- **Utilizar apenas comandos de consulta quando não autorizado**
-- **Conferir filtros antes de executar consultas**
-- **Evitar alterações diretas em produção**
-- **Atenção a dados sensíveis**
-
----
+Utilizar apenas comandos de consulta quando não autorizado
+Conferir filtros antes de executar consultas
+Evitar alterações diretas em produção
+Proteger dados sensíveis
 
 ## 📌 Próximos Conteúdos a Evoluir
 
-- **CTE (aprofundamento)**
-- **Views (criação e manutenção)**
-- **Otimização de consultas**
-- **Índices**
-- **Controle de permissões**
-
----
+Otimização de consultas
+Índices
+Controle de permissões
+Performance em grandes volumes de dados
 
 ## 🧠 Observações Pessoais
 
-- **SQL é uma ferramenta importante para suporte a sistemas**
-- **Ajuda a entender melhor o funcionamento das aplicações**
-- **Este conteúdo será atualizado conforme evolução nos estudos**
+SQL é essencial para suporte a sistemas modernos
+Facilita diagnósticos rápidos
+Ajuda a entender o funcionamento das aplicações
+Este conteúdo evolui conforme meus estudos
 
-📅 Última atualização: Janeiro / 2026
+📅 Última atualização: Fevereiro / 2026
+📈 Nível atual: Básico–intermediário prático em SQL para suporte técnico
