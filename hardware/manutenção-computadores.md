@@ -1,94 +1,101 @@
-# 🧑‍💻 Estudos de GitHub para Suporte Técnico Júnior
+# 🖥️ Estudos em Manutenção de Computadores
 
-Este arquivo contém anotações de estudos sobre **GitHub e controle de versão**, com foco em organização de estudos, versionamento básico e uso prático no dia a dia de um **Suporte Técnico Júnior**.
+Este arquivo contém anotações sobre **manutenção básica de computadores**, com foco em atividades comuns de **Suporte Técnico Júnior**.
 
-O conteúdo será atualizado conforme avanço nos estudos.
-
----
-
-## 📚 Conceitos Básicos
-
-- GitHub é uma plataforma de hospedagem de repositórios Git
-- Utilizado para controle de versão e colaboração
-- Permite manter histórico de alterações em arquivos e projetos
+Os conhecimentos aqui descritos são de nível básico e introdutório.
 
 ---
 
-## 🔁 Conceito de Versionamento
+## 🧩 Conceitos Básicos de Hardware
 
-- Versionamento permite acompanhar mudanças ao longo do tempo
-- Cada alteração gera um registro (commit)
-- Facilita organização, histórico e recuperação de arquivos
-
----
-
-## 🗂️ Repositórios
-
-- Repositório é o local onde ficam os arquivos do projeto ou estudos
-- Pode conter:
-  - Arquivos `.md`
-  - Pastas organizadas por tema
-  - Documentação técnica
-
-Exemplo de estrutura:
-
-suporte-tecnico/ ├── README.md ├── linux.md ├── windows.md ├── redes.md ├── github.md └── manutencao-computadores.md
+- Computador é composto por hardware e software
+- Hardware são os componentes físicos
+- Software são os sistemas e programas
 
 ---
 
-## 📝 Arquivos Markdown (.md)
+## 🔧 Componentes Principais
 
-- Utilizados para criar documentações simples
-- São arquivos de texto formatados
-- Muito usados para anotações técnicas
+Conhecimento básico sobre:
 
-Vantagens:
-- Leves
-- Fáceis de editar
-- Visualização direta no GitHub
-
----
-
-## 🧠 Comandos Básicos do Git (Noções)
-
-Conhecimento introdutório dos comandos:
-
-- `git init`
-- `git status`
-- `git add`
-- `git commit`
-- `git push`
-- `git pull`
-- `git clone`
-
-Esses comandos são utilizados para versionar arquivos e enviar alterações ao GitHub.
+- Placa-mãe
+- Processador (CPU)
+- Memória RAM
+- HD / SSD
+- Fonte de alimentação
+- Placa de vídeo
+- Gabinete
 
 ---
 
-## 🔐 Boas Práticas
+## 🧹 Manutenção Preventiva
 
-- Escrever mensagens de commit claras
-- Manter organização dos arquivos
-- Atualizar o repositório com frequência
-- Não versionar dados sensíveis
+Atividades comuns:
+
+- Limpeza interna do computador
+- Remoção de poeira
+- Organização de cabos
+- Verificação de ventoinhas
+
+Importância:
+- Evita superaquecimento
+- Aumenta a vida útil dos componentes
+
+---
+
+## 🛠️ Manutenção Corretiva (Noções)
+
+- Identificação de falhas básicas
+- Substituição de componentes simples
+- Verificação de conexões
+- Testes após manutenção
+
+---
+
+## 🔌 Problemas Comuns em Computadores
+
+Situações frequentes:
+
+- Computador não liga
+- Lentidão
+- Superaquecimento
+- Falha no HD ou SSD
+- Problemas de memória RAM
+
+---
+
+## 💽 Formatação e Sistema Operacional (Noções)
+
+- Conceito de formatação
+- Instalação básica do sistema operacional
+- Atualizações do sistema
+- Instalação de drivers
+
+---
+
+## 🔒 Cuidados e Boas Práticas
+
+- Desligar o computador da tomada antes da manutenção
+- Utilizar pulseira antiestática (quando possível)
+- Manusear peças com cuidado
+- Evitar contato com componentes energizados
 
 ---
 
 ## 🧠 Aplicação no Suporte Técnico
 
-- Organização de documentação interna
-- Registro de procedimentos
-- Compartilhamento de conhecimento
-- Demonstração de aprendizado contínuo
+- Atendimento a problemas básicos de hardware
+- Diagnóstico inicial de falhas
+- Apoio ao usuário final
+- Encaminhamento para níveis superiores quando necessário
 
 ---
 
 ## 🧠 Observações Pessoais
 
-- GitHub é uma ferramenta importante para a área de TI
-- Ajuda na organização e evolução técnica
-- Este repositório reflete meu processo de aprendizado
+- Conhecimentos adquiridos por estudo e prática básica
+- Conteúdo será ampliado conforme evolução técnica
 
 ---
 
-📅 Última atualização: Janeiro / 2026
+📅 Última atualização: Fevereiro / 2026
