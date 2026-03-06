@@ -1,4 +1,4 @@
-# 🪟 Estudos de Windows para Suporte Técnico Júnior
+# 🪟 Estudos de Windows para Suporte Técnico 
 
 Este arquivo contém anotações sobre o sistema operacional Windows, com foco em atividades comuns de **Suporte Técnico / Help Desk / Suporte de TI**.
 
