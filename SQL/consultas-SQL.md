@@ -1,4 +1,4 @@
-# 🗄️ Estudos de SQL para Suporte Técnico Júnior
+# 🗄️ Estudos de SQL para Suporte Técnico
 
 Este repositório contém anotações práticas de estudos sobre a **linguagem SQL**, com foco no uso em **Suporte Técnico / Help Desk / Suporte a Sistemas**.
 
