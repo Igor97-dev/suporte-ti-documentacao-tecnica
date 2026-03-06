@@ -1,4 +1,4 @@
-# Estudos para Suporte Técnico Jr
+# Estudos para Suporte Técnico 
 
 Este repositório contém minhas anotações e estudos voltados para a área de
 Suporte Técnico / Help Desk, com foco em:
