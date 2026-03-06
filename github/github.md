@@ -1,4 +1,4 @@
-# 🧑‍💻 Estudos de GitHub para Suporte Técnico Júnior
+# 🧑‍💻 Estudos de GitHub para Suporte Técnico
 
 Este arquivo contém anotações de estudos sobre **GitHub e controle de versão**, com foco em organização de estudos, versionamento básico e uso prático no dia a dia de um **Suporte Técnico Júnior**.
 
