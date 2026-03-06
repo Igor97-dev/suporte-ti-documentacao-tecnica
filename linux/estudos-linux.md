@@ -1,4 +1,4 @@
-# 🐧 Estudos de Linux para Suporte Técnico Júnior
+# 🐧 Estudos de Linux para Suporte Técnico
 
 Este arquivo contém minhas anotações pessoais sobre Linux, com foco em atuação como **Suporte Técnico Júnior**.  
 Os conteúdos estão sendo atualizados conforme avanço no curso.
