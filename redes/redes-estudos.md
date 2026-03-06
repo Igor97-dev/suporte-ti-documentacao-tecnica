@@ -1,4 +1,4 @@
-# 🌐 Estudos de Redes de Computadores para Suporte Técnico Júnior
+# 🌐 Estudos de Redes de Computadores para Suporte Técnico
 
 Este repositório contém anotações práticas de estudos sobre **Redes de Computadores**, com foco em atividades de **Suporte Técnico / Help Desk / Suporte de TI (N1)**.
 
